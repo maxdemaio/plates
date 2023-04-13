@@ -1,10 +1,11 @@
 def is_valid(s):
+  # Length check
   if len(s) < 2 or len(s) > 6:
     return False
   # Must start with 2 letters
   if not s[:2].isalpha():
     return False
-    
+
   # Loop over characters in string
   numSeen = False
   for char in s:
