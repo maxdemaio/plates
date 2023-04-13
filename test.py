@@ -6,6 +6,7 @@ class TestLicensePlate(unittest.TestCase):
     def test_valid_plates(self):
         self.assertTrue(is_valid("CS50"))
         self.assertTrue(is_valid("ETO88"))
+        self.assertTrue(is_valid("NRVOUS"))
 
     def test_invalid_plates(self):
         self.assertFalse(is_valid("CS05"))
